@@ -105,8 +105,16 @@ making_bomb
 
 while $game_on==true
 
-#print $bomb
+
 puts "Predict a safe Number from the Matrix(Don't choose 99 as its marked as safe point,if choosed game over): "
 choices=Integer(gets)
 game(choices)
 end
+
+//the bomb
+
+if $game_on==false
+puts "The Bombs were placed at"
+  print $bomb
+end
+
